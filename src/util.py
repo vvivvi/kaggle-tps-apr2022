@@ -22,7 +22,9 @@ def ingest_sensor_data(csv_name: str, csv_name_labels: str = None):
     sensor_data = np.reshape(sensor_data, newshape=(-1, n_steps, n_sensors))
 
     # permute dimensions -> (sequence, sensor, step)
-    sensor_data = np.transpose(sensor_data, (0, 2, 1))
+    # sensor_data = np.transpose(sensor_data, (0, 2, 1))
+
+    # do not permute -> dimensions (sequence, timestep, sensor)
     print(sensor_data.shape, n_seq)
     sequence_ids = df["sequence"].to_numpy()
     # remove duplicate elements
