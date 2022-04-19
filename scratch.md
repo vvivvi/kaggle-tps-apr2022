@@ -2,9 +2,11 @@ TODO:
 
 - experiment with batching
 - test gru in place of LSTM
+  - about similar
 - learn to implement multi-branch models with the Keras functional API
 - convert data reading to use Dataset objects
 - experimemnt with different number of convolution layers in front of LSTMs
+  - one layer + maxpooling seems to work best
 - add attention to lstm (attention package one straightforward option)
 - feature engineering
   -hand-crafted statistics (mean, std, min, max, percentiless, ample covariance matrix)
